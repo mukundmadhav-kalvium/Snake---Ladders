@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -32,14 +34,19 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+    width: 100%;
 }
 
 .user{
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     column-gap: 10px;
 }
 
+.user span{
+    width: 100%;
+}
 .user h3{
     font-size: 16px;
 }
@@ -49,6 +56,7 @@ body{
     height: 550px;
 }
 
+
 /* Main Section Styling */
 .content{
     text-align: justify;
@@ -57,14 +65,16 @@ body{
 
 .content > h1{
     font-size: 32px;
-    color: #FFE500;
+    margin-bottom: 10px;
+    color: cyan;
     font-weight: 900;
+    font-family: 'Black Ops One';
 }
 
 .content > p{
     font-size: 16px;
-    /* line-height: 2rem; */
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #continue-btn{
@@ -88,8 +98,37 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 10px;
     font-weight: 900;
     font-size: medium;
-    height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background-position: top;
+        padding-right: 0;
+    }
+    main{
+        padding: 10%;
+        padding-bottom: 20px;
+    }
+    
+    .content{
+        padding-left: 0;
+    }
+
+    #game-logo{
+        width: 50%;
+        height: auto;
+    }
+
+    .user h3{
+        font-size: 14px;
+        padding-right: 10px;
+    }
+
+    footer{
+        padding-top: 0px;
+        height: auto;
+    }
 }
