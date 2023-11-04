@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background-image: url("./assets/Instruction-bg-webpage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right: 70px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header Section Styling */
+#user-logo{
+    filter: invert();
+    width: 25px;
+    height: 26px;
+}
+
+#game-logo{
+    width: 200px;
+    height: 70px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.user h3{
+    font-size: 16px;
+}
+
+#game-img{
+    width: 550px;
+    height: 550px;
+}
+
+/* Main Section Styling */
+.content{
+    text-align: justify;
+    padding-left: 50px;
+}
+
+.content > h1{
+    font-size: 32px;
+    color: #FFE500;
+    font-weight: 900;
+}
+
+.content > p{
+    font-size: 16px;
+    /* line-height: 2rem; */
+    margin-bottom: 40px;
+}
+
+#continue-btn{
+    width: 155px;
+    height: 55px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: #FFE500;
+}
+
+.continue-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Footer Section Styling*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-weight: 900;
+    font-size: medium;
+    height: 50px;
+}

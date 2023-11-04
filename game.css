@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background-image: url(./assets/game-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right: 70px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header Section Styling */
+#user-logo{
+    filter: invert();
+    width: 25px;
+    height: 26px;
+}
+
+#game-logo{
+    width: 200px;
+    height: 70px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.user h3{
+    font-size: 16px;
+}
+
+#game-img{
+    width: 550px;
+    height: 550px;
+}
+
+
+/* Main Section Styling */
+
+
+
+/* Footer Section Styling */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    font-weight: 900;
+    font-size: large;
+}
