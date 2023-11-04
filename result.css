@@ -11,6 +11,7 @@ body{
     background-image: url("./assets/result-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
+    padding-right: 70px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -30,16 +31,20 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 70px;
     margin-top: 10px;
+    width: 100%;
 }
 
 .user{
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     column-gap: 10px;
 }
 
+.user span{
+    width: 100%;
+}
 .user h3{
     font-size: 16px;
 }
@@ -55,8 +60,8 @@ body{
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin: 3% 25%;
-    height: 430px;
+    margin: 2% 25%;
+    height: 65vh;
     width: 50%;
     padding: 70px ;
     text-align: center;
@@ -121,9 +126,60 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
     font-weight: 900;
     font-size: medium;
-    height: 50px;
-    padding-top: 20px;
-    padding-right: 70px;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background-position: top;
+        padding-right: 0;
+    }
+    main{
+        padding: 10%;
+        padding-bottom: 16px;
+    }
+    
+    #game-logo{
+        width: 50%;
+        height: auto;
+    }
+    
+    .user h3{
+        font-size: 14px;
+        padding-right: 10px;
+    }
+
+    footer{
+        padding-top: 1px;
+        height: auto;
+    }
+    
+    .main-content{
+        flex-direction: column;
+        align-items: center;        
+        height: 70vh;
+        width: 100%;
+        margin: 0;
+        padding: 30% 10%;
+    }
+
+    .main-content h1{
+        font-size: 2rem;
+    }
+    .player1-stats span, .player2-stats span{
+        font-size: 1.3rem;
+    }
+    #play-btn{
+        margin-top: 18px;
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .seperator{
+        width: 80%;
+        height: 2px;
+    }
 }
