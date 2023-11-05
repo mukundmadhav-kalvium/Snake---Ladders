@@ -100,10 +100,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 10px;
     font-weight: 900;
     font-size: medium;
-    height: 50px;
 }
 
 
