@@ -1,3 +1,5 @@
+/* "Disclaimer: I, Mukund Madhav, have solely created all the CSS." */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 *{
@@ -9,10 +11,13 @@
 
 body{
     background-image: url(./assets/game-bg.png);
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     padding-right: 70px;
     font-family: 'Inter', sans-serif;
+    user-select: none;
 }
 
 /* Header Section Styling */
@@ -60,17 +65,17 @@ body{
 .main-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .play-div{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    height: 250px;
-    width: 400px;
+    height: 300px;
+    width: 500px;
     padding: 1rem;
 }
 
@@ -78,11 +83,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
+    width: 350px;
     border: 5px solid black;
     padding: 1rem;
     position: relative;
-    line-height: 2.5rem;
+    line-height: 3rem;
 
 }
 
@@ -107,7 +112,7 @@ body{
 #dice-btn{
     color: black;
     height: 70px;
-    width: 100px;
+    width: 85px;
     background-color: transparent;
     border: 5px solid black;
     border-radius: 20px;
@@ -129,54 +134,69 @@ body{
     font-size: 32px;
 }
 
+.game-content{
+    display: flex;
+}
+
+.pawns{
+    align-self: flex-end;
+    padding-right: 20px;
+    height: 80px;
+    width: 80px;
+}
+
 .game-board{
     display: grid;
     grid-template-columns: repeat(10,1fr);
-    background-image: url("./assets/Game-img.jpeg");
+    background-image: url("./assets/My\ Game-img.jpeg");
     background-size: cover;
     border: 7px solid black;
 }
 
 .box{
-    width: 56px;
-    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    /* border: .5px solid black; */
 }
 
-#player-1,
-#player-2 {
-  width: 52px;
-  height: 52px;
-  border-radius: 100px;
-  position: relative;
-  border: 3px solid black;
-  transition: all linear 0.5s;
+#pawn-1{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: 2px solid black;
+    
 }
 
-#player-1 {
-    top: 0px;
-    left: -62px;
-    background-color: rgb(236, 82, 82);
-    z-index: 2;
-  }
-  
-  #player-2 {
-      top: -65px;
-      left: -62px;
-      background-color: rgb(243, 181, 46);
-      z-index: 2;
-  }
+#pawn-2{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid black;
+}
 
 /* Footer Section Styling */
 
 footer{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
     padding-top: 21px;
     font-weight: 900;
     font-size: medium;
+    text-align: center;
 }
 
+footer a{
+    text-decoration: none;
+    color: yellow;
+}
 /* Device Responsive */
 
 @media screen and (max-width: 768px) {
@@ -184,10 +204,36 @@ footer{
         padding-right: 0;
     }
 
+    #game-logo{
+        width: 50%;
+        height: auto;
+    }
+
+    .user h3{
+        font-size: 14px;
+        padding-right: 10px;
+    }
+
     .main-container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .play-div{
+        width: 300px;
+        height: 300px;
+    }
+
+    .player-turn-div{
+        width: 300px;
+        height: 140px;
+    }
+
+    .player-turn-div p {
+        font-size: 22px;
     }
 
     .box{
@@ -195,11 +241,17 @@ footer{
         height: 30px;
     }
 
-    .game-board{
-        margin-left: 70px;
+    .pawns{
+        width: 30px;
+        height: 50px;
+    }
+
+    #pawn-1 , #pawn-2{
+        height: 20px;
+        width: 20px;
     }
 
     footer{
-        padding-top: 70px;
+        padding-bottom: 8px;
     }
 }

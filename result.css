@@ -13,6 +13,8 @@ body{
     background-repeat: no-repeat;
     padding-right: 70px;
     font-family: 'Inter', sans-serif;
+    user-select: none;
+
 }
 
 /* Header Section Styling */
@@ -102,7 +104,7 @@ body{
 }
 
 .player1-stats span, .player2-stats span{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 #play-btn{
     width: 200px;
@@ -129,6 +131,11 @@ footer{
     padding-top: 15px;
     font-weight: 900;
     font-size: medium;
+}
+
+footer a{
+    text-decoration: none;
+    color: yellow;
 }
 
 @media screen and (max-width: 768px) {

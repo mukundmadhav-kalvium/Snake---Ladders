@@ -6,6 +6,6 @@ uname.innerText= getName;
 
 
 const continueBtn = document.getElementById("continue-btn");
-continueBtn.addEventListener("click",(e)=>{
+continueBtn.addEventListener("click",()=>{
     window.location.href = "./game.html";
 })
