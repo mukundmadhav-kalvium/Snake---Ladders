@@ -225,6 +225,10 @@ footer a{
         height: 300px;
     }
 
+    .game-content{
+        flex-direction: column-reverse;
+    }
+
     .player-turn-div{
         width: 300px;
         height: 140px;
@@ -235,13 +239,18 @@ footer a{
     }
 
     .box{
-        width: 30px;
-        height: 30px;
+        width: 34px;
+        height: 34px;
     }
 
     .pawns{
-        width: 30px;
-        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        width: 60px;
+        height: 30px;
+        margin-top: 10px;
+        gap: 2px;
     }
 
     #pawn-1 , #pawn-2{
